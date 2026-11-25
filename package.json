@@ -1,0 +1,44 @@
+{
+  "name": "meta-capi-check",
+  "version": "0.1.0",
+  "description": "Zero-dependency local CLI and library to catch Meta Conversions API (CAPI) payload bugs that return HTTP 200 while silently breaking matching or deduplication.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./src/validator.mjs",
+  "exports": {
+    ".": "./src/validator.mjs"
+  },
+  "bin": {
+    "meta-capi-check": "./bin/meta-capi-check.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "meta",
+    "facebook",
+    "conversions-api",
+    "capi",
+    "meta-capi",
+    "fbp",
+    "fbc",
+    "fbclid",
+    "sha256",
+    "validator",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plainrouter/meta-capi-check.git"
+  },
+  "homepage": "https://plainrouter.com/tools/meta-capi-validator"
+}
